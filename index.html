@@ -97,7 +97,7 @@ nav {
 @keyframes nav-slide-in { to { transform: translateY(0); } }
 .nav-logo {
   font-family: var(--font-head);
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   background: linear-gradient(90deg, var(--indigo-light), var(--cyan));
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
@@ -739,6 +739,7 @@ footer {
 }
 @media (max-width: 600px) {
   .projects-grid { grid-template-columns: 1fr; }
+  #internship-cards { grid-template-columns: 1fr !important; }
   nav .nav-links { display: none; }
   nav .nav-links.open {
     display: flex; flex-direction: column;
@@ -764,7 +765,7 @@ footer {
 
 <!-- NAVBAR -->
 <nav id="navbar">
-  <a class="nav-logo" href="#hero">Venkatesh P.</a>
+  <a class="nav-logo" href="#hero">Palakurthi Venkatesh Goud</a>
   <ul class="nav-links" id="nav-links">
     <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
@@ -806,7 +807,7 @@ footer {
         <div class="card-role">Data Science Undergraduate</div>
         <div class="card-stats">
           <div class="stat">
-            <div class="stat-num">9+</div>
+            <div class="stat-num">13+</div>
             <div class="stat-lbl">Projects</div>
           </div>
           <div class="stat">
@@ -814,8 +815,8 @@ footer {
             <div class="stat-lbl">Certs</div>
           </div>
           <div class="stat">
-            <div class="stat-num">1st</div>
-            <div class="stat-lbl">Hackathon</div>
+            <div class="stat-num">2</div>
+            <div class="stat-lbl">Internships</div>
           </div>
         </div>
       </div>
@@ -828,7 +829,7 @@ footer {
   <div class="marquee-track" id="marquee">
     <span class="marquee-item"><span class="marquee-dot"></span> XYlofy AI</span>
     <span class="marquee-item"><span class="marquee-dot"></span> Deloitte</span>
-    <span class="marquee-item"><span class="marquee-dot"></span> MLR Institute of Technology</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Marri Laxman Reddy Institute of Technology and Management (MLRITM) of Technology</span>
     <span class="marquee-item"><span class="marquee-dot"></span> Government Polytechnic Medchal</span>
     <span class="marquee-item"><span class="marquee-dot"></span> Forage</span>
     <span class="marquee-item"><span class="marquee-dot"></span> IBM Cognitive Classes</span>
@@ -841,7 +842,7 @@ footer {
     <span class="marquee-item"><span class="marquee-dot"></span> Telco Churn Dataset</span>
     <!-- Duplicate for infinite scroll -->
     <span class="marquee-item"><span class="marquee-dot"></span> Deloitte</span>
-    <span class="marquee-item"><span class="marquee-dot"></span> MLR Institute of Technology</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Marri Laxman Reddy Institute of Technology and Management (MLRITM) of Technology</span>
     <span class="marquee-item"><span class="marquee-dot"></span> Government Polytechnic Medchal</span>
     <span class="marquee-item"><span class="marquee-dot"></span> Forage</span>
     <span class="marquee-item"><span class="marquee-dot"></span> IBM Cognitive Classes</span>
@@ -945,45 +946,47 @@ footer {
     <div class="section-label">Career</div>
     <h2 class="section-title">Work <span>Experience</span></h2>
   </div>
+  <!-- XYlofy Internship Cards -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2.5rem;" class="reveal" id="internship-cards">
+    <div class="exp-card" onclick="openCertModal('cert_xylofy_internship','AI & Data Analyst Intern — XYlofy AI · Certificate of Internship','img')" style="cursor:pointer;border-color:rgba(236,72,153,0.3);background:linear-gradient(135deg,rgba(236,72,153,0.06),rgba(79,70,229,0.06));" title="Click to view internship certificate">
+      <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+        <div style="width:44px;height:44px;background:linear-gradient(135deg,#ec4899,#4f46e5);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;">🤖</div>
+        <div>
+          <div style="font-family:var(--font-head);font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--pink);margin-bottom:0.1rem;">XYlofy AI · Remote</div>
+          <div style="font-family:var(--font-head);font-size:1rem;font-weight:700;color:#fff;">AI & Data Analyst Intern</div>
+        </div>
+      </div>
+      <div style="font-size:0.78rem;color:var(--amber);font-weight:600;margin-bottom:0.75rem;">📅 Apr 28 – May 28, 2026 · 4 Weeks</div>
+      <div class="exp-desc">Gained practical experience in AI, Machine Learning, Data Analysis, Data Visualization, and Data-Driven Decision Making. Demonstrated dedication, analytical thinking, and strong commitment to learning.</div>
+      <div class="badge-row" style="margin-top:0.75rem;">
+        <span class="badge badge-indigo">AI / ML</span>
+        <span class="badge badge-pink">Data Analysis</span>
+        <span class="badge badge-cyan">Data Visualization</span>
+        <span class="badge badge-amber">Decision Making</span>
+      </div>
+      <div style="margin-top:1rem;font-size:0.72rem;color:var(--cyan);font-weight:500;">🏅 Click to view certificate →</div>
+    </div>
+
+    <div class="exp-card" style="border-color:rgba(6,182,212,0.3);background:linear-gradient(135deg,rgba(6,182,212,0.06),rgba(79,70,229,0.06));">
+      <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+        <div style="width:44px;height:44px;background:linear-gradient(135deg,#06b6d4,#4f46e5);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;">📊</div>
+        <div>
+          <div style="font-family:var(--font-head);font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--cyan);margin-bottom:0.1rem;">XYlofy AI · Remote</div>
+          <div style="font-family:var(--font-head);font-size:1rem;font-weight:700;color:#fff;">Data Science Intern</div>
+        </div>
+      </div>
+      <div style="font-size:0.78rem;color:var(--amber);font-weight:600;margin-bottom:0.75rem;">📅 2026 · Data Science Internship Program</div>
+      <div class="exp-desc">Developed end-to-end ML solutions, performed feature engineering, trained and evaluated predictive models, and presented business insights through reports and visualizations using Python, Excel, SQL, and Power BI.</div>
+      <div class="badge-row" style="margin-top:0.75rem;">
+        <span class="badge badge-indigo">Feature Engineering</span>
+        <span class="badge badge-pink">Predictive Modeling</span>
+        <span class="badge badge-cyan">Python · SQL</span>
+        <span class="badge badge-amber">Power BI</span>
+      </div>
+    </div>
+  </div>
+
   <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="exp-card" onclick="openCertModal('cert_xylofy_internship','AI & Data Analyst Intern — XYlofy AI · Certificate of Internship','img')" style="cursor:pointer;" title="Click to view internship certificate">
-        <div class="exp-header">
-          <div class="exp-title">AI & Data Analyst Intern</div>
-          <div class="exp-date">Apr 28 – May 28, 2026</div>
-        </div>
-        <div class="exp-company">XYlofy AI · Remote &nbsp;<span class="badge badge-cyan" style="font-size:0.65rem;">🏅 Click for Certificate</span></div>
-        <div class="exp-desc">
-          Completed a 4-week AI & Data Analyst Internship gaining practical experience in Artificial Intelligence, Machine Learning, Data Analysis, Data Visualization, and Data-Driven Decision Making. Demonstrated dedication, analytical thinking, and strong commitment to learning.
-        </div>
-        <div class="badge-row">
-          <span class="badge badge-indigo">AI / ML</span>
-          <span class="badge badge-pink">Data Analysis</span>
-          <span class="badge badge-cyan">Data Visualization</span>
-          <span class="badge badge-amber">Decision Making</span>
-        </div>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="exp-card">
-        <div class="exp-header">
-          <div class="exp-title">Data Science Intern</div>
-          <div class="exp-date">2026</div>
-        </div>
-        <div class="exp-company">XYlofy AI · Data Science Internship Program · Remote</div>
-        <div class="exp-desc">
-          Developed end-to-end machine learning solutions including feature engineering, model training and evaluation, and predictive modeling. Presented business insights through structured reports and interactive visualizations using Python, Excel, SQL, and Power BI.
-        </div>
-        <div class="badge-row">
-          <span class="badge badge-indigo">Feature Engineering</span>
-          <span class="badge badge-pink">Predictive Modeling</span>
-          <span class="badge badge-cyan">Python · SQL</span>
-          <span class="badge badge-amber">Power BI</span>
-        </div>
-      </div>
-    </div>
       <div class="exp-card">
         <div class="exp-header">
           <div class="exp-title">Data Analytics Job Simulation</div>
@@ -1067,6 +1070,7 @@ footer {
     <div class="project-card">
       <div class="project-links">
         <a href="https://github.com/PalakurthiVenkateshGoud/VidyaGuide-AI" target="_blank" rel="noopener noreferrer" class="proj-link-btn proj-link-github"><span class="proj-link-icon">🐙</span> GitHub</a>
+        <a href="https://vidyaguide-ai.streamlit.app/" target="_blank" rel="noopener noreferrer" class="proj-link-btn proj-link-live"><span class="proj-link-icon">🚀</span> Live Demo</a>
       </div>
       <div class="project-emoji">🎓</div>
       <div class="project-name">VidyaGuide-AI</div>
@@ -1124,6 +1128,47 @@ footer {
       <div class="project-tags"><span class="tag">MATLAB</span><span class="tag">Data Analytics</span><span class="tag">IEEE</span><span class="tag">MathWorks</span><span class="tag">Visualization</span></div>
     </div>
 
+    <div class="project-card">
+      <div class="project-links">
+        <a href="https://github.com/PalakurthiVenkateshGoud/Sales-Forecasting-Demand-Intelligence-System" target="_blank" rel="noopener noreferrer" class="proj-link-btn proj-link-github"><span class="proj-link-icon">🐙</span> GitHub</a>
+        <a href="https://sales-forecasting-demand-intelligence-system.streamlit.app/" target="_blank" rel="noopener noreferrer" class="proj-link-btn proj-link-live"><span class="proj-link-icon">🚀</span> Live Demo</a>
+      </div>
+      <div class="project-emoji">📈</div>
+      <div class="project-name">Sales Forecasting & Demand Intelligence System</div>
+      <div class="project-desc">End-to-end sales forecasting system using time-series analysis and ML models to predict product demand. Includes EDA on historical sales data, trend decomposition, and business intelligence visualizations for inventory planning.</div>
+      <div class="project-tags"><span class="tag">Python</span><span class="tag">Time-Series</span><span class="tag">Forecasting</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span><span class="tag">Jupyter</span></div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-links">
+        <a href="https://github.com/PalakurthiVenkateshGoud/EmployeeAttritionPrediction" target="_blank" rel="noopener noreferrer" class="proj-link-btn proj-link-github"><span class="proj-link-icon">🐙</span> GitHub</a>
+      </div>
+      <div class="project-emoji">👥</div>
+      <div class="project-name">Employee Attrition Prediction</div>
+      <div class="project-desc">ML-based employee attrition prediction system using the IBM HR Analytics Dataset. Covers EDA, feature importance analysis, model comparison, HR insights, and business recommendations to reduce employee turnover.</div>
+      <div class="project-tags"><span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">IBM HR Dataset</span><span class="tag">EDA</span><span class="tag">Feature Importance</span><span class="tag">Jupyter</span></div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-links">
+        <a href="https://github.com/PalakurthiVenkateshGoud/HousePricePrediction" target="_blank" rel="noopener noreferrer" class="proj-link-btn proj-link-github"><span class="proj-link-icon">🐙</span> GitHub</a>
+      </div>
+      <div class="project-emoji">🏠</div>
+      <div class="project-name">House Price Prediction</div>
+      <div class="project-desc">Regression-based house price prediction model using real estate data. Performs feature engineering, correlation analysis, and evaluates multiple regression algorithms to predict property prices with high accuracy.</div>
+      <div class="project-tags"><span class="tag">Python</span><span class="tag">Regression</span><span class="tag">Scikit-learn</span><span class="tag">Feature Engineering</span><span class="tag">EDA</span><span class="tag">Jupyter</span></div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-links">
+        <a href="https://github.com/PalakurthiVenkateshGoud/CareerOS" target="_blank" rel="noopener noreferrer" class="proj-link-btn proj-link-github"><span class="proj-link-icon">🐙</span> GitHub</a>
+      </div>
+      <div class="project-emoji">🧭</div>
+      <div class="project-name">CareerOS</div>
+      <div class="project-desc">9-agent sequential AI career intelligence platform built with Next.js/Chakra UI + FastAPI. Features multi-agent orchestration for resume analysis, job matching, skill gap detection, and personalized career roadmap generation.</div>
+      <div class="project-tags"><span class="tag">Python</span><span class="tag">Next.js</span><span class="tag">FastAPI</span><span class="tag">Multi-Agent AI</span><span class="tag">LLM</span><span class="tag">Chakra UI</span></div>
+    </div>
+
   </div>
 </section>
 <section id="education">
@@ -1135,7 +1180,7 @@ footer {
     <div class="edu-card">
       <div class="edu-icon">🎓</div>
       <div class="edu-degree">B.Tech — Computer Science & Data Science</div>
-      <div class="edu-school">MLR Institute of Technology & Management, Hyderabad</div>
+      <div class="edu-school">Marri Laxman Reddy Institute of Technology and Management (MLRITM)</div>
       <div class="edu-date">Expected May 2027</div>
     </div>
     <div class="edu-card">
@@ -1331,7 +1376,7 @@ footer {
 </main>
 
 <footer>
-  <p>Crafted with ❤️ by <strong>Venkatesh Palakurthi Goud</strong> · Data Science & CS @ MLR Institute · Hyderabad, India</p>
+  <p>Crafted with ❤️ by <strong>Venkatesh Palakurthi Goud</strong> · Data Science & CS @ Marri Laxman Reddy Institute of Technology and Management (MLRITM) · Hyderabad, India</p>
 </footer>
 
 <script>
